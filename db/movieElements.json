@@ -1,5 +1,5 @@
 {
-  "categories": [
+  "movieElements": [
     {
       "id": "item0",
       "categoryId": "category1",
@@ -106,7 +106,7 @@
       "id": "17",
       "categoryId": "category2",
       "name": "Rocky + Romeo Rodriguez",
-      "cost":
+      "cost": 1000.0
     },
     {
       "id": "18",
@@ -118,7 +118,7 @@
       "id": "19",
       "categoryId": "category3",
       "name": "Århus, Denmark",
-      "cost":
+      "cost": 2000
     },
     {
       "id": "20",
