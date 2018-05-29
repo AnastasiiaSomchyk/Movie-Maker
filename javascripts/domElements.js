@@ -1,7 +1,9 @@
 const htmlElements = require('./htmlElements');
 const helpers = require('./helpers');
+const events = require('./events');
 
 let categories;
+const { toggleCheckBoxes, addCheckBoxListeners, } = events;
 const { createCheckBox, createCheckBoxSection, } = htmlElements;
 const { attachStringToElementWithId, } = helpers;
 
@@ -52,9 +54,9 @@ const createMovieElements = response => {
   addCheckBoxesToCategories(movieElements);
 
   // 4. DISABLE ALL CHECKBOXES
-
+  toggleCheckBoxes();
   // 5.  ADD LISTENER TO CHECKBOXES.
-
+  addCheckBoxListeners(categories);
 };
 
 module.exports = {
