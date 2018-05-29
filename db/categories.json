@@ -1,19 +1,19 @@
 {
   "categories": [
     {
-      "id": "category1",
+      "id": "actors_and_actresses",
       "name": "Actors and Actresses"
     },
     {
-      "id": "category2",
+      "id": "animals_and_trainers",
       "name": "Animals + Trainers"
     },
     {
-      "id": "category3",
+      "id": "special_effects",
       "name": "Special Effects"
     },
     {
-      "id": "category4",
+      "id": "locations",
       "name": "Locations"
     }
   ]

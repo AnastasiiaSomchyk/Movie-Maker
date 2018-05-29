@@ -1,0 +1,26 @@
+I want there to an input box for me to enter my movie budget. When I click enter or click on a button that says 'Set Budget', then I can start to choose things to add to my movie. After setting a budget, I don't want to be able to change my budget.
+checkboxes on the page are read-only until a budget is set
+I want to be able to see all of the things that I can add to my movie at once, but I don't want to see the price of them.
+When I add a movie element, my remaining budget should decrease with the cost of the element.
+When I add a movie element, the movie element that I added will show up below my remaining budget with the cost of the element.
+
+
+
+1.  enter or click on button
+-> enables all checkboxes;
+  -> page loads with all checkboxes disabled
+-> disables the set bugdet input
+
+2. create a bugdet variable thats stored.
+-> populate checkboxes with prices attached to the html via data attributes
+-> get the width of the progress bar, store in a variable,
+  -> progress calculate 0 - 100%, with the width being 100%.
+-> when a checkbox is checked,
+
+ ...use the data attribute on the checkbox to...
+  -> animate the progress bar (width of progress bar * numberOfSelectedCategories).
+  -> create an html element with the cost as the innerText, add it as a line item.
+  -> decrement the budget, update the div that has the remaining budget (currentBudget - x)
+
+
+
