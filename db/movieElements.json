@@ -2,217 +2,217 @@
   "movieElements": [
     {
       "id": "item0",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Robert",
       "cost": 1700.0
     },
     {
       "id": "item1",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Julie",
       "cost": 1900.0
     },
     {
       "id": "item2",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Simon",
       "cost": 1100.0
     },
     {
       "id": "item3",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Mark",
       "cost": 120000
     },
     {
       "id": "item4",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Teddy",
       "cost": 1600.0
     },
     {
       "id": "item5",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Jack",
       "cost": 1100.0
     },
     {
       "id": "item6",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Anna",
       "cost": 1700.0
     },
     {
       "id": "item7",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Rose",
       "cost": 1500.0
     },
     {
       "id": "8",
-      "categoryId": "actors_and_actresses",
+      "categoryId": "category1",
       "name": "Bill",
       "cost": 1300.0
     },
     {
       "id": "9",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Pipsie + Ashton Berry",
       "cost": 900.0
     },
     {
       "id": "10",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Alice + Tom Johnes",
       "cost": 1000.0
     },
     {
       "id": "11",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Smoki + Jerry Wong",
       "cost": 900.0
     },
     {
       "id": "12",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Cherry + Gary Shtein",
       "cost": 9500.0
     },
     {
       "id": "13",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Moka + Sally Robbins",
       "cost": 800.0
     },
     {
       "id": "14",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Cosmo + Elton Gerber",
       "cost": 1500.0
     },
     {
       "id": "15",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Fiona + Donna Gilberg",
       "cost": 1100.0
     },
     {
       "id": "16",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Fritz + Felix Shnizberg",
       "cost": 800.0
     },
     {
       "id": "17",
-      "categoryId": "animals_and_trainers",
+      "categoryId": "category2",
       "name": "Rocky + Romeo Rodriguez",
       "cost": 1000.0
     },
     {
       "id": "18",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Stuttgart, Germany",
       "cost": 5000.0
     },
     {
       "id": "19",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Århus, Denmark",
       "cost": 2000
     },
     {
       "id": "20",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Oslo, Norway",
       "cost": 7000.0
     },
     {
       "id": "21",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Göteborg, Sweden",
       "cost": 9000.0
     },
     {
       "id": "22",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Gdansk, Poland",
       "cost": 7000.0
     },
     {
       "id": "23",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Riga, Latvia",
       "cost": 5000.0
     },
     {
       "id": "24",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Bollate, Italy",
       "cost": 8500.0
     },
     {
       "id": "19",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Gijon, Spain",
       "cost": 10000.0
     },
     {
       "id": "25",
-      "categoryId": "locations",
+      "categoryId": "category3",
       "name": "Devon, United Kingdom",
       "cost": 950.0
     },
     {
       "id": "26",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "Go motion",
       "cost": 600.0
     },
     {
       "id": "27",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "Virtual cinematography",
       "cost": 900.0
     },
     {
       "id": "28",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "Dolly zoom",
       "cost": 350.0
     },
     {
       "id": "29",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "Stop motion",
       "cost": 750.0
     },
     {
       "id": "30",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "Practical effects",
       "cost": 450.0
     },
     {
       "id": "31",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "Optical printing",
       "cost": 500.0
     },
     {
       "id": "32",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "Bullet time",
       "cost": 650.0
     },
     {
       "id": "33",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "Digital compositing",
       "cost": 800.0
     },
     {
       "id": "34",
-      "categoryId": "special_effects",
+      "categoryId": "category4",
       "name": "In-camera effects",
       "cost": 700.0
     }
