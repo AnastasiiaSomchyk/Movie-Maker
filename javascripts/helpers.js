@@ -1,3 +1,5 @@
+let currentBudget = 0;
+
 const setTotal = total => {
   const totalContainer = document.getElementById('total');
   return (totalContainer.innerHTML = `${total}`);
@@ -14,6 +16,14 @@ const getAllCheckBoxes = () => {
 
 const getRemainingBudget = cost => {
   return getTotal() + cost;
+};
+
+const setProgressBarHTML = cost => {
+  const progressBar = document.getElementById('progress-bar');
+
+  currentBudget += cost;
+  const newWidth = currentBudget / getTotal() * 100;
+  progressBar.style.width = `${newWidth}%`;
 };
 
 const toggleReceipt = (id, cost, name) => {
@@ -44,4 +54,5 @@ module.exports = {
   attachStringToElementWithId,
   getRemainingBudget,
   toggleReceipt,
+  setProgressBarHTML,
 };
