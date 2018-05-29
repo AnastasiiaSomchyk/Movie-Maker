@@ -6,6 +6,7 @@ const {
   getRemainingBudget,
   toggleReceipt,
   getAllCheckBoxes,
+  setProgressBarHTML,
 } = helpers;
 
 const theSetBudget = 0;
@@ -45,13 +46,31 @@ const addCheckBoxListeners = (categories) => {
       const name = checkBoxData.name;
       const cost = parseInt(checkBoxData.cost);
       const id = checkBoxData.labelId;
+      console.log('cost: ', cost);
 
+      /*
+//       5.2 When I check a checkbox:
+//         -the cost is added to the progress bar to animate it.
+//         -the remaining budget is calculated by subtracting the cost from the total budget.
+//         -the setTotal updates the remaining budet in the UI.
+//         -the item is added to the receipt.
+//
+//       */
       if (checkBox.checked) {
+        setProgressBarHTML(cost);
         const remainingBudget = getRemainingBudget(-cost);
         setTotal(remainingBudget);
         toggleReceipt(id, cost, name);
       } else {
 
+        /*
+         5.3 If the checkbox is unchecked:
+         -I decrease the progress bar by the cost of the unchecked item.
+         -I remove the existing receipt.
+         -I calculate the remaining budget and update the total in the UI.
+
+       */
+        setProgressBarHTML(-cost);
         toggleReceipt(id, cost, name);
         const remainingBudget = getRemainingBudget(cost);
         setTotal(remainingBudget);
