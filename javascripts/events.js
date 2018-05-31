@@ -1,15 +1,26 @@
 const helpers = require('./helpers');
 
 const {
-  getTotal,
+  getStatementProps,
   setTotal,
   getRemainingBudget,
   toggleReceipt,
   getAllCheckBoxes,
   setProgressBarHTML,
+  updateStatement,
+  setTotalColor,
 } = helpers;
 
-const theSetBudget = 0;
+let theSetBudget = 0;
+let currentBudget = 0;
+
+const updateCurrentBudget = (cost) => {
+  return currentBudget += cost;
+};
+
+const getBudget = () => {
+  return currentBudget;
+};
 
 const isCheckBoxCheckedInEachCategory = (categories) => {
   const checkBoxes = helpers.getAllCheckBoxes();
@@ -36,6 +47,14 @@ const toggleCheckBoxes = () => {
   }
 };
 
+const isOverBudget = () => {
+  return currentBudget <= theSetBudget;
+};
+
+const isMovieMakeable = (categories) => {
+  return isCheckBoxCheckedInEachCategory(categories) && currentBudget <= theSetBudget;
+};
+
 const addCheckBoxListeners = (categories) => {
   const checkBoxes = getAllCheckBoxes();
   for (let i = 0; i < checkBoxes.length; i++) {
@@ -46,7 +65,6 @@ const addCheckBoxListeners = (categories) => {
       const name = checkBoxData.name;
       const cost = parseInt(checkBoxData.cost);
       const id = checkBoxData.labelId;
-      console.log('cost: ', cost);
 
       /*
 //       5.2 When I check a checkbox:
@@ -57,10 +75,15 @@ const addCheckBoxListeners = (categories) => {
 //
 //       */
       if (checkBox.checked) {
-        setProgressBarHTML(cost);
         const remainingBudget = getRemainingBudget(-cost);
-        setTotal(remainingBudget);
+
         toggleReceipt(id, cost, name);
+        updateCurrentBudget(cost);
+        const canMakeMovie = isMovieMakeable(categories);
+        setTotal(remainingBudget, canMakeMovie);
+        setProgressBarHTML(currentBudget, theSetBudget, isOverBudget());
+        setTotalColor(isOverBudget());
+        updateStatement(getStatementProps(canMakeMovie));
       } else {
 
         /*
@@ -70,20 +93,18 @@ const addCheckBoxListeners = (categories) => {
          -I calculate the remaining budget and update the total in the UI.
 
        */
-        setProgressBarHTML(-cost);
+
         toggleReceipt(id, cost, name);
         const remainingBudget = getRemainingBudget(cost);
-        setTotal(remainingBudget);
+
+        updateCurrentBudget(-cost);
+        const canMakeMovie = isMovieMakeable(categories);
+        setTotal(remainingBudget, canMakeMovie);
+        setTotalColor(isOverBudget());
+        setProgressBarHTML(currentBudget, theSetBudget, isOverBudget());
+        updateStatement(getStatementProps(canMakeMovie));
       }
 
-      const allChecked = isCheckBoxCheckedInEachCategory(categories);
-      const totalBudget = getTotal();
-
-      if (allChecked && totalBudget <= theSetBudget) {
-        // show the you an make the movie div
-      } else {
-        // show the you can't make the movie div.
-      }
     });
   }
 };
@@ -97,12 +118,14 @@ setBudgetButton.addEventListener('click', e => {
   if (input.value.length > 0) {
     setBudgetButton.disabled = true;
     toggleCheckBoxes();
-    helpers.theSetBudget = input.value;
+    theSetBudget = parseInt(input.value);
     helpers.setTotal(input.value);
   }
 });
 
 module.exports = {
+  updateCurrentBudget,
+  getBudget,
   addCheckBoxListeners,
   toggleCheckBoxes,
 };
