@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Movie Maker</title>
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -15,7 +16,7 @@
     <h1 class="navbar-left">Movie Maker</h1>
 
     <div class="progres-box" id='progress-bar-container'>
-      <div  class="progress progress-striped">
+      <div class="progress progress-striped">
         <div id="progress-bar" class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
 
 
@@ -32,17 +33,18 @@
   </div>
 </nav>
 <!-- Navbar Ends -->
-<div class="container ">
-  <div class="row">
-    <div id="categories-container" class="col-md-8"></div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <h1 id="total" class="text-center"></h1>
-        <div class="panel-body">
-          <div id="receipt"></div>
-          <div id='status' class='col-md-12'></div>
-        </div>
+<div class="container-fluid main-container">
+
+  <div id="categories-container" class="col-md-8"></div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <h2 id="total" class="text-center"></h2>
+      <div class="panel-body">
+        <div id="receipt"></div>
+        <div id='status' class='col-md-12'></div>
+        <div id="statement"></div>
       </div>
+
 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

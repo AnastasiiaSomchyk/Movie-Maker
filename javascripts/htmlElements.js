@@ -1,5 +1,5 @@
 const createTitle = title => {
-  return `<h2>${title}</h2>`;
+  return `<h2><strong>${title}</strong></h2>`;
 };
 
 const createCheckBox = props => {
@@ -21,11 +21,11 @@ const createCheckBox = props => {
 
 const createCheckBoxSection = (title, idToAttach) => {
   return `
-    <div>
-      ${createTitle(title)}
-      <div id=${idToAttach}>
-
-      </div>
+    <div class="card col-lg-6">
+    <div class="card-body text-center">
+    <h5 class="card-title">${createTitle(title)}</h5>
+    <p class="" id=${idToAttach}></p>
+    </div>
     </div>
   `;
 };
