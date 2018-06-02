@@ -12,23 +12,23 @@
 </head>
 
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid nav-fluid-box">
     <h1 class="navbar-left">Movie Maker</h1>
 
     <div class="progres-box" id='progress-bar-container'>
       <div class="progress progress-striped">
         <div id="progress-bar" class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-
-
         </div>
       </div>
-
     </div>
+
     <form id='set-budget-form' class="navbar-form navbar-right">
       <div class="form-group">
-        <input id="budget-input" type="number" class="form-control">
+        <input placeholder="Type..." id="budget-input" type="number" class="form-control">
       </div>
-      <button id="set-budget" class="btn btn-default">Set Budget</button>
+      <button id="set-budget" class="btn btn-default">
+        <strong>Set Budget</strong>
+      </button>
     </form>
   </div>
 </nav>

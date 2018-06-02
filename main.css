@@ -11,6 +11,7 @@ background-size: cover;
 /* Navbar */
 .navbar-left, h1 {
   font-family: 'Monoton', cursive;
+  font-weight: 400;
 }
 
 .navbar-default {
@@ -21,7 +22,7 @@ background-size: cover;
 .progres-box {
 width: 50%;
 margin: 0 auto;
-
+padding-top: 40px;
 }
 
 .progress {
@@ -32,18 +33,6 @@ margin: 0 auto;
    border-radius: 19px;
    height: 25px;}
 
-
-.progress-bar-custom {
-  background: rgba(66, 139, 202, 1);
-  background: -webkit-linear-gradient(top, rgba(66, 139, 202, 1) 0%, rgba(66, 139, 202, 1) 100%);
-  background: linear-gradient(to bottom, rgba(66, 139, 202, 1) 0%, rgba(66, 139, 202, 1) 100%);}
-
-  .progress-striped .progress-bar-custom {
-    background-color: rgb(91, 161, 167);
-     /* background-image: -webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255, 255, 255, 0.15),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255, 255, 255, 0.15)),color-stop(0.75,rgba(255, 255, 255, 0.15)),color-stop(0.75,transparent),to(transparent)));
-      background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, 0.15) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, 0.15) 50%,rgba(255, 255, 255, 0.15) 75%,transparent 75%,transparent);
-       background-image: linear-gradient(45deg,rgba(255, 255, 255, 0.15) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, 0.15) 50%,rgba(255, 255, 255, 0.15) 75%,transparent 75%,transparent); */
-       background-size: 40px 40px;}
 /* Navbar */
 
                           /* Body */
@@ -61,13 +50,17 @@ border:solid 1px rgba(255, 255, 255, 0.685);
 }
 
 .card-body{
-  background-color: #e3c1529a;
+  background-color: #e3c152d5;
   height: 350px;
   width: 350px;
   border-radius: 50%;
 }
 
 p{
+  font-size: 23px;
+}
+
+span{
   font-size: 23px;
 }
 
@@ -79,13 +72,12 @@ background-color: #e3c152b0;
 }
 
 .panel-default{
-  height: 750px;
-  background-color: rgba(137, 177, 179, 0.616);
-  /* background-color: #e43a3d2f; */
+  height: 765px;
+  background-color: rgba(161, 166, 167, 0.493);
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 #budget-input{
-  -webkit-appearance: none;
+  background-color: #e6dfe0;
 }
