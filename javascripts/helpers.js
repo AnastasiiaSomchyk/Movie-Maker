@@ -4,7 +4,7 @@ const updateStatement = ({ message, color, }) => {
 };
 
 const getStatementProps = (canMakeMovie) => {
-  return canMakeMovie ? { message: 'You can make the movie!', color: 'rgba(72, 244, 129, 0.5)', } : { message: "You can't make the movie!", color: 'rgba(244, 72, 72, 0.5)', };
+  return canMakeMovie ? { message: 'You can make the movie!', color: 'rgba(72, 244, 129, 0.5)', } : { message: "You can't make the movie!", color: 'rgb(230,69,72)', };
 };
 
 const setTotal = total => {
@@ -14,7 +14,7 @@ const setTotal = total => {
 
 const setTotalColor = (isOverBudget) => {
   const totalContainer = document.getElementById('total');
-  totalContainer.style.color = isOverBudget ? 'green' : 'red';
+  totalContainer.style.color = isOverBudget ? 'green' : 'tomato';
 };
 
 const getTotal = () => {
